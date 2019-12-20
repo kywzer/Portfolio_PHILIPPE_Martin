@@ -12,6 +12,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.container-fluid{
+  padding: 0px;
+}
+
 a, a:hover{
   text-decoration: none;
 }
@@ -24,10 +28,41 @@ header{
    line-height: 70px;
 }
 
+.logo{
+  color: #ffffff;
+  texte-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  float: left;
+}
 
+.menu{
+  float: right;
+}
+
+.menu a{
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.menu a:hover{
+  color: #2C3E50;
+}
 /* banniere */
+.banner{
+  width: 100%;
+  max-width: 100%
+}
 
+.ban{
+  width: 100%;
+  max-width: 100%;
+}
 
+.ban img{
+  width: 100%;
+  max-width: 100%;
+}
 /* about */
 
 
