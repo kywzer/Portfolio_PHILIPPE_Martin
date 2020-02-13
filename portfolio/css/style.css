@@ -78,12 +78,17 @@ header{
 .ban{
   width: 100%;
   max-width: 100%;
+  background-image: url(img/egerie.jpg);
 }
 
 .ban img{
   position: relative;
   width: 100%;
   max-width: 100%;
+}
+.photo {
+  position: top left;
+  height: 20px;
 }
 
 .inner-banner{
@@ -101,7 +106,7 @@ header{
   background-color: #004C8C;
 }
 
-#hamburger, #hamburger-content{
+/*#hamburger, #hamburger-content{
   display: inline;
 }
 
@@ -144,7 +149,7 @@ header{
 }
 #hamburger-sidebar-herder{
 
-}
+}*/
 
 
 
