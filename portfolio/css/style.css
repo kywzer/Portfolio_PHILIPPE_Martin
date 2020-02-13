@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* font-family: 'Raleway', sans-serif; */
+/*body*/
 
 body, html{
   padding: 0;
@@ -20,7 +21,26 @@ a, a:hover{
   text-decoration: none;
 }
 
+.about{
+text-align: center;
+}
+
+.separator{
+height: 3px;
+width: 5%;
+border:none;
+box-shadow: none;
+background-color:#3498BD;
+}
+
+
+
+
+
+
+
 /* header */
+
 
 header{
    background-color: #3498BD;
@@ -49,6 +69,7 @@ header{
   color: #2C3E50;
 }
 /* banniere */
+
 .banner{
   width: 100%;
   max-width: 100%
@@ -60,22 +81,81 @@ header{
 }
 
 .ban img{
+  position: relative;
   width: 100%;
   max-width: 100%;
 }
 
 .inner-banner{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40%;
   width: 100%;
   text-align: center;
 }
 
+.inner-banner{
+  color: white;
+}
+
+.inner-banner .btn-primary:hover{
+  background-color: #004C8C;
+}
+
+#hamburger, #hamburger-content{
+  display: inline;
+}
+
+#hamburger-button {
+  display:none;
+  cursor: pointer;
+  background: none;
+  border:none;
+  padding: 0;
+  vertical-align:top;
+  line-height: 47px;
+  float: right;
+  margin-right: 32px;
+
+}
+
+#hamburger-overlay{
+  display: none;
+  position:fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#hamburger-sidebar{
+  position: fixed;
+  width:84%;
+  z-index: 20;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: #FFF;
+}
+
+#hamburger-sidebar li{
+  display: block;
+}
+#hamburger-sidebar-herder{
+
+}
+
+
+
+
 /* about */
 
 
-/* portfolio */
+/* GitHub */
 
 
 /* contact */
+.row{
+text-align: center;
+}
