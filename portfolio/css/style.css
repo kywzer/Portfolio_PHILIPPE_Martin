@@ -78,7 +78,6 @@ header{
 .ban{
   width: 100%;
   max-width: 100%;
-  background-image: url(img/egerie.jpg);
 }
 
 .ban img{
@@ -92,7 +91,7 @@ header{
 }
 
 .inner-banner{
-  position: absolute;
+  position:absolute;
   top: 40%;
   width: 100%;
   text-align: center;
