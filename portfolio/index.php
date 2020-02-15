@@ -1,63 +1,8 @@
 <?php
-include("db.php");
+include('db.php');
 
-$errors = [];
 
-//formulaire soumis
-if (!empty($_POST)) {
-	//récupère les données
-	$name = strip_tags($_POST['name']);
-	$email = strip_tags($_POST['email']);
-	$message = strip_tags($_POST['message']);
-
-	//validation des données
-	if (empty($name)) {
-		$errors[] = "Veuillez renseigner votre nom !";
-	}
-	elseif (strlen($name) < 2 || strlen($name) > 60) {
-		$errors[] = "Votre nom doit avoir entre 2 et 60 caractères !";
-	}
-
-	if (empty($email)) {
-		$errors[] = "Veuillez renseigner votre email !";
-	}
-	elseif (strlen($email) > 191) {
-		$errors[] = "Votre email est trop long !";
-	}
-	elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$errors[] = "Votre email n'est pas valide !";
-	}
-
-	if (empty($message)) {
-		$errors[] = "Veuillez renseigner votre message !";
-	}
-	elseif (strlen($message) < 4 || strlen($message) > 800) {
-		$errors[] = "Votre message doit avoir entre 4 et 800 caractères !";
-	}
-
-	//est-ce que le formulaire est totalement valide ?
-	//on tchèque si le tableau est toujours vide pour déduire !
-	if(empty($errors)){
-		//notre requête insert
-		$sql = "INSERT INTO messages
-		VALUES (NULL, :author, :email, :message, :date)";
-
-		//envoie la requête chez mysql
-		$stmt = $pdo->prepare($sql);
-
-		//exécute en fournissant les valeurs
-		$stmt->execute([
-			':author' => $name,
-			':email' => $email,
-			':message' => $message,
-			':date' => date('Y-m-d H:i:s')
-		]);
-
-		//redirige vers la liste des messages
-		header('Location: messages.php');
-	}
-}
-?>
+ ?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -111,7 +56,7 @@ if (!empty($_POST)) {
 			<div class="row">
 				<div class="inner-banner">
 					<h1> Bienvenue sur mon portfolio </h1>
-					<a href="#contact"><button class="btn btn-primary">Contactez moi </button></a>
+					<a href="massages/ajout.php"><button class="btn btn-primary">Contactez moi </button></a>
 
 				</div>
 			</div>
@@ -217,15 +162,10 @@ if (!empty($_POST)) {
 
 								<div class="controls">
 									<button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Envoyer</button>
+									
 								</div>
 							</div>
-							<?php
-							foreach($errors as $error){
-								echo '<div class="error">';
-								echo $error;
-								echo '</div>';
-							}
-							?>
+
 						</form>
 					</div>
 				</div>
