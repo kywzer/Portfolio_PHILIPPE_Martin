@@ -21,34 +21,16 @@ include('db.php');
 
 
 <!-- contenu du site -->
-<body>
-	<header>
-
-
-
-		<!--herder-->
-		<header class="container-fluid herder">
-			<div class="container">
-				<a href="#" class="logo"> Mon portfolio </a>
-				<nav class="menu">
-					<a href="#"> Accueil</a>
-					<a href="#about"> A propos </a>
-					<a href="https://github.com/kywzer"> GitHub</a>
-					<link rel="stylesheet" href="">
-					<a href="#contact"> Contact </a>
-
-				</nav>
-			</div>
-		</header>
-		<!--end header -->
-
+<?php
+include('/components/header.php');
+ ?>
 
 
 
 
 
 		<!-- bannière -->
-		<section class="container-fluid contact">
+		<div class="container-fluid contact">
 			<div class="ban">
 				<img src="img/ban.jpg" alt="banniere du site">
 			</div>
@@ -56,15 +38,16 @@ include('db.php');
 			<div class="row">
 				<div class="inner-banner">
 					<h1> Bienvenue sur mon portfolio </h1>
-					<a href="massages/ajout.php"><button class="btn btn-primary">Contactez moi </button></a>
+
+					<a href="messages/ajout.php"><button class="btn btn-primary">Contactez moi </button></a>
 
 				</div>
 			</div>
-		</section>
+		</div>
 		<!-- end bannière -->
 
 		<!-- à propos -->
-		<section class="container-fluid about">
+		<div class="container-fluid about">
 			<div class="container">
 				<h2 id="about"> A propos de moi</h2>
 
@@ -102,11 +85,11 @@ include('db.php');
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 		<!-- end à propos -->
 
 		<!-- portfolio -->
-		<section class="container-fluid portfolio">
+		<div class="container-fluid portfolio">
 			<div class="container">
 
 				<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
@@ -134,42 +117,10 @@ include('db.php');
 
 				</article>
 			</div>
-		</section>
+		</div>
 		<!-- end portfolio -->
-
-		<!-- footer / contact-->
-		<hr class="separator">
-		<footer class="footer container-fluid footer">
-			<div class="container">
+		<?php include('/components/footer.php'); ?>
 
 
-				<div class="row">
-					<div class="col-12">
-						<h2 id="contact"> Contactez moi !</h2>
-
-						<div class="span6">
-							<form>
-
-
-
-								<div class="controls controls-row">
-									<input id="name" name="name" type="text" class="span3" placeholder="Name">
-									<input id="mail" name="mail" type="email" class="span3" placeholder="Email adress">
-								</div>
-								<div class="controls">
-									<textarea id="message" name="message" class="span6" placeholder="Your Message" rows="$"></textarea>
-								</div>
-
-								<div class="controls">
-									<button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Envoyer</button>
-									
-								</div>
-							</div>
-
-						</form>
-					</div>
-				</div>
-			</div>
-		</footer>
 	</body>
 	</html>

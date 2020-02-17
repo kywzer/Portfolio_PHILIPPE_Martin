@@ -1,6 +1,7 @@
-body {
-	font-family: Verdana;
-	background-color: tomato;
+img{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
 }
 
 nav a {
