@@ -25,9 +25,14 @@
 	<meta charset="UTF-8">
 	<title>Tous les messages</title>
 
-	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+	<div class="container-fluid contact">
+		<div class="ban">
+			<img src="img/ban.jpg" alt="banniere du site">
+		</div>
+	</div>
 	<div class="container">
 		<h1>Mon site</h1>
 		<nav>

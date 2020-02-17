@@ -1,7 +1,7 @@
-img{
-  position: relative;
-  width: 100%;
-  max-width: 100%;
+body{
+	background-image:url("http://localhost/portfolio_philippe/portfolio/img/ban.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 nav a {
@@ -10,10 +10,10 @@ nav a {
 }
 
 .container {
-	background-color: #EEE;
+  color: ghostwhite;
 	max-width: 600px;
 	padding: 30px;
-	border: 1px solid #333;
+
 	margin: auto;
 }
 

@@ -64,17 +64,21 @@ if (!empty($_POST)) {
 	<meta charset="UTF-8">
 	<title>Ajout de message</title>
 
-	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="styles2.css">
 
 </head>
 <body>
-<img src="img/ban.jpg" alt="" />
+
+	<div class="ban">
+		<img src="img/ban.jpg" alt="">
+	</div
 
 
+	</div>
 	<div class="container">
 		<h1>Mon portfolio</h1>
 
-		<h2>Envoyer un message !</h2>
+		<h2>Envoyez moi un message !</h2>
 		<form method="post">
 			<div>
 				<label for="name">Votre nom</label>

@@ -15,6 +15,9 @@ include('db.php');
 	<!--css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+
+
 
 
 </head>
@@ -32,7 +35,7 @@ include('/components/header.php');
 		<!-- bannière -->
 		<div class="container-fluid contact">
 			<div class="ban">
-				<img src="img/ban.jpg" alt="banniere du site">
+				<img src="img/ban.jpg" alt="">
 			</div>
 
 			<div class="row">
