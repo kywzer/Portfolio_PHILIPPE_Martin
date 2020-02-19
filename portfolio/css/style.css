@@ -43,6 +43,7 @@ background-color:#3498BD;
 
 
 header{
+   position: relative;
    background-color: #3498BD;
    height: 70px;
    line-height: 70px;
@@ -91,7 +92,7 @@ header{
 }
 
 .inner-banner{
-  position:absolute;
+  position: absolute;
   top: 40%;
   width: 100%;
   text-align: center;

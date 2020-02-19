@@ -1,5 +1,6 @@
 <?php
-//include("db.php");
+include('../db.php');
+
 
 $errors = [];
 
@@ -54,7 +55,7 @@ if (!empty($_POST)) {
 		]);
 
 		//redirige vers la liste des messages
-		header('Location: messages.php');
+		header('Location: ../index.php');
 	}
 }
 ?>
@@ -65,43 +66,45 @@ if (!empty($_POST)) {
 	<title>Ajout de message</title>
 
 	<link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
+
 	<div class="ban">
 		<img src="img/ban.jpg" alt="">
-	</div
-
-
 	</div>
-	<div class="container">
-		<h1>Mon portfolio</h1>
 
-		<h2>Envoyez moi un message !</h2>
-		<form method="post">
-			<div>
-				<label for="name">Votre nom</label>
-				<input type="text" name="name" id="name">
-			</div>
-			<div>
-				<label for="email">Votre email</label>
-				<input type="email" name="email" id="email">
-			</div>
-			<div>
-				<label for="message">Votre message</label>
-				<textarea name="message" id="message"></textarea>
-			</div>
 
-			<?php
-			foreach($errors as $error){
-				echo '<div class="error">';
-				echo $error;
-				echo '</div>';
-			}
-			?>
-			<button>Envoyer !</button>
-		</form>
-	</div>
+</div>
+<div class="container">
+	<h1>Mon portfolio</h1>
+
+	<h2>Envoyez moi un message !</h2>
+	<form method="post">
+		<div>
+			<label for="name">Votre nom</label>
+			<input type="text" name="name" id="name">
+		</div>
+		<div>
+			<label for="email">Votre email</label>
+			<input type="email" name="email" id="email">
+		</div>
+		<div>
+			<label for="message">Votre message</label>
+			<textarea name="message" id="message"></textarea>
+		</div>
+
+		<?php
+		foreach($errors as $error){
+			echo '<div class="error">';
+			echo $error;
+			echo '</div>';
+		}
+		?>
+		<a  href='portfolio/index.php'><button class="btn btn-primary">Envoyer ! </button></a>
+	</form>
+</div>
 </body>
 </html>

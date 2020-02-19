@@ -15,18 +15,19 @@
 
 
     <!--herder-->
-    <header class="container-fluid herder">
+    <div class="container-fluid herder">
       <div class="container">
         <a href="#" class="logo"> Mon portfolio </a>
         <nav class="menu">
-          <a href="#"> Accueil</a>
+          <a href="index.php"> Accueil</a>
           <a href="#about"> A propos </a>
           <a href="https://github.com/kywzer"> GitHub</a>
           <link rel="stylesheet" href="">
-          <a href="#contact"> Contact </a>
+        
 
-        </nav>
-      </div>
-    </header>
-    </html>
-    <!--end header -->
+
+      </nav>
+    </div>
+  </header>
+  </html>
+  <!--end header -->

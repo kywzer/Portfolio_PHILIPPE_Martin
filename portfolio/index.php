@@ -62,8 +62,8 @@ include('/components/header.php');
 						<h2>Etudes</h2>
 						<br>
 						<p>
-							Octobre 2019-Juin 2020 BTS informatique à l'ecole Campus Academy Nantes<br><br>
-							Sept 2018- Juin 2019 Terminal Pro Système Numérique Lycée François Arago – Nantes <br> <br>
+							Octobre 2019-Juin 2020 BTS informatique à l'ecole Campus Academy Nantes<br>
+							Sept 2018- Juin 2019 Terminal Pro Système Numérique Lycée François Arago – Nantes <br>
 							Titulaire du Bac Système Numérique en juin 2019 mention Assez Bien
 
 						</p>
@@ -73,7 +73,7 @@ include('/components/header.php');
 						<br>
 						<p>
 							Lors de mon Bac professionnel Systeme Numerique option SSIHT (Sûreté et Sécurité des Infrastruvcture de l'Habitat et du Tertiaire),
-							j'ai effectué mes stages dans l'entreprise Instant électronique spécialisé dans le courant faible.<br><br>
+							j'ai effectué mes stages dans l'entreprise Instant électronique spécialisé dans le courant faible.
 							Lors de ce stage j'ai pu effectuer l'installation de caméras de surveillance; installation d'interphone; controle d'acces; mise en service de la fibre optique,
 
 
