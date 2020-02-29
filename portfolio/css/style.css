@@ -9,9 +9,9 @@ body, html{
 }
 
 
-body {
+/*body {
   font-family: 'Raleway', sans-serif;
-}
+}*/
 
 .container-fluid{
   padding: 0px;
@@ -42,11 +42,12 @@ background-color:#3498BD;
 /* header */
 
 
-header{
+.banniere{
    position: relative;
    background-color: #3498BD;
-   height: 70px;
    line-height: 70px;
+   height: 70px;
+
 }
 
 .logo{
@@ -86,17 +87,20 @@ header{
   width: 100%;
   max-width: 100%;
 }
+
+.inner-banner{
+  position: absolute;
+  top: 400%;
+  width: 100%;
+  text-align: center;
+}
+
 .photo {
   position: top left;
   height: 20px;
 }
 
-.inner-banner{
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-}
+
 
 .inner-banner{
   color: white;
@@ -104,6 +108,10 @@ header{
 
 .inner-banner .btn-primary:hover{
   background-color: #004C8C;
+}
+
+.row{
+  line-height: 40px;
 }
 
 /*#hamburger, #hamburger-content{

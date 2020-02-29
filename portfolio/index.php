@@ -62,8 +62,8 @@ include('/components/header.php');
 						<h2>Etudes</h2>
 						<br>
 						<p>
-							Octobre 2019-Juin 2020 BTS informatique à l'ecole Campus Academy Nantes<br>
-							Sept 2018- Juin 2019 Terminal Pro Système Numérique Lycée François Arago – Nantes <br>
+							Octobre 2019-Juin 2020 BTS informatique à l'ecole Campus Academy Nantes<br> <br>
+							Sept 2018- Juin 2019 Terminal Pro Système Numérique Lycée François Arago – Nantes <br> <br>
 							Titulaire du Bac Système Numérique en juin 2019 mention Assez Bien
 
 						</p>
@@ -73,17 +73,24 @@ include('/components/header.php');
 						<br>
 						<p>
 							Lors de mon Bac professionnel Systeme Numerique option SSIHT (Sûreté et Sécurité des Infrastruvcture de l'Habitat et du Tertiaire),
-							j'ai effectué mes stages dans l'entreprise Instant électronique spécialisé dans le courant faible.
+							j'ai effectué mes stages dans l'entreprise Instant électronique spécialisé dans le courant faible.<br> <br>
 							Lors de ce stage j'ai pu effectuer l'installation de caméras de surveillance; installation d'interphone; controle d'acces; mise en service de la fibre optique,
 
 
 						</p>
 					</div>
 					<div class="col-4">
-						<h2>Hobbies</h2>
+						<h2>Compétances</h2>
 						<br>
 						<p>
-							La création de musique ( Beatmaking )
+							Mes compétances dans le Développement sont: <br>
+							- HTML & CSS j ai un niveau debutant <br>
+							- PHP j'ai un niveau tres faible je ne le métrise pas encore <br>
+							- PYTHON niveau faible je sais le lire mais j'ai du mal a l'ecrire <br>
+							- JAVASCRIPT aucune connaissance<br> <br>
+							Mes compétances réseau : <br>
+							Je suis encore en plein apprentissage mais j'ai une plus grande facilité d'apprentissage dans le reseau que dans le developpement suite aux stages effectué et à mes années passé au lycée avec ma formation. 
+
 						</p>
 					</div>
 				</div>
